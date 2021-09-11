@@ -1,0 +1,11 @@
+<h2>Posts</h2>
+<ul>
+  <li class="card card-body mb-2" *ngFor="let post of posts">
+    <h3><a class="link-secondary text-decoration-none" routerLink="/post/{{ post.id }}">{{ post.title }}</a>
+      &nbsp;&nbsp;<small><button (click)="postHide(post)" class="btn btn-dark btn-sm">+</button></small></h3>
+    <p  *ngIf="!post.hide">{{ post.body }}</p>
+    <p class="mb-0">Autor: {{ post.username }}</p>
+  </li>
+</ul>
+
+

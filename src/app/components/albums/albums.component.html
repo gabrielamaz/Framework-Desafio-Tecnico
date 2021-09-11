@@ -1,0 +1,7 @@
+<h2>Albums</h2>
+<ul>
+  <li class="card card-body mb-2" *ngFor="let album of albums">
+  <h3><a class="link-secondary text-decoration-none" routerLink="/album/{{ album.id }}">{{ album.title }}</a></h3>
+    <p class="mb-0">Autor: {{ album.username }}</p>
+  </li>
+</ul>

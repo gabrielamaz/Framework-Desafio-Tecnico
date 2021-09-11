@@ -1,0 +1,21 @@
+<nav class="navbar navbar-expand navbar-dark bg-secondary mb-4">
+  <div class="container">
+    <a routerlink="/" class="navbar-brand">Desafio Técnico</a>
+    <div>
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item" [routerLinkActive]="['active']">
+          <a routerLink="/" class="nav-link">Home</a>
+        </li>
+        <li class="nav-item" [routerLinkActive]="['active']">
+          <a routerLink="/posts" class="nav-link">Posts</a>
+        </li>
+        <li class="nav-item" [routerLinkActive]="['active']">
+          <a routerLink="/albums" class="nav-link">Albums</a>
+        </li>
+        <li class="nav-item" [routerLinkActive]="['active']">
+          <a routerLink="/todos" class="nav-link">To Do's</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>

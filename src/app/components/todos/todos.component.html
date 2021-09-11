@@ -1,0 +1,11 @@
+<h2>To Do's</h2>
+<ul>
+  <li class="card card-body mb-2" *ngFor="let todo of todos">
+    <h3>Tarefa: {{ todo.title }}</h3>
+    <p class="mb-0">Finalizada: 
+      <i class="fa fa-check" *ngIf="todo.completed" style="color:green"></i>
+      <i class="fa fa-times" aria-hidden="true" *ngIf="!todo.completed" style="color:red"></i> 
+    </p>
+    <p class="mb-0">Autor: {{ todo.username }}</p>
+  </li>
+</ul>

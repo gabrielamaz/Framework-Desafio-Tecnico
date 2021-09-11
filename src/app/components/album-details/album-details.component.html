@@ -1,0 +1,8 @@
+<div  *ngIf="album">
+  <h3>Album: {{ album.title }}</h3>
+  <div class="card">
+    <ul class="text-center" *ngFor="let photo of photos">
+      <li class="m-2 list-group-item"><img src="{{photo.url}}" alt=""><br>{{photo.title}}</li>
+    </ul>
+  </div>
+</div>
